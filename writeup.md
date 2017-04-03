@@ -27,6 +27,7 @@ My pipeline consisted of seven steps. I implemented these steps in a class calle
 - First, I converted the images to grayscale.
 - Then, to reduce image noise I applied a Gaussian smoothing with `kernal size = 5` (the larger the kernal size, the blurrer the image becomes) to the grey-scaled image. 
 - Next I applied Canny edge detection to the image with reduced noise level. I chose a low threshold of 50 (supressed pixels with a gradient value below 50) and a high threshold of 150 (pixels with gradient value above 150 are marked as strong edge pixels, while those with gradient value between 50 and 150 and connected to strong edge pixels are marked as weak edge pixels). 
+- Then I applied a region selection to detected edges and only selected a polygon area which covers the lane lines. The way the region selection works is that first the selected region (defined by vertices) is colored as white, and elsewhere as black. Then a logic "and"  (using `cv2.bitwise_and`) is used to combine this colored image with the one from Canny edge detection (black and white). 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
