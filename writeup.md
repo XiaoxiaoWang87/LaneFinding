@@ -20,9 +20,12 @@
 
 ### Reflection
 
-#### Method Description
+#### 1. Method Description
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of seven steps. I implemented these steps in a class called `LaneFindingPipeline()`. 
+
+- First, I converted the images to grayscale.
+- Then to reduce image noise I applied a Gaussian smoothing with kernal size = 5 (the larger the kernal size, the blurrer the image becomes) to the grey-scaled image. 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
@@ -31,7 +34,7 @@ If you'd like to include images to show how the pipeline works, here is how to i
 ![alt text][image1]
 
 
-#### Potential Shortcomings
+#### 2. Potential Shortcomings
 
 
 One potential shortcoming would be what would happen when ... 
@@ -39,7 +42,7 @@ One potential shortcoming would be what would happen when ...
 Another shortcoming could be ...
 
 
-#### Possible Improvements
+#### 3. Possible Improvements
 
 A possible improvement would be to ...
 
