@@ -11,6 +11,10 @@
 
 ### Files for submission
 
+- Code: https://github.com/XiaoxiaoWang87/LaneFinding/blob/master/P1.ipynb
+- Image output: https://github.com/XiaoxiaoWang87/LaneFinding/tree/master/test_images_output
+- Video output: https://www.youtube.com/playlist?list=PLtwuyAB8W1dgcRNujw-ShOy6UVMt03yEa
+
 ---
 
 ### Reflection
