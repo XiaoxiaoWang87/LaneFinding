@@ -29,7 +29,6 @@ My pipeline consisted of seven steps. I implemented these steps in a class calle
 - Next I applied Canny edge detection to the image with reduced noise level. I chose a low threshold of 50 (supressed pixels with a gradient value below 50) and a high threshold of 150 (pixels with gradient value above 150 are marked as strong edge pixels, while those with gradient value between 50 and 150 and connected to strong edge pixels are marked as weak edge pixels). 
 - Then I applied a region selection to only select a polygon area which covers the lane lines. The way the region selection works is that first the selected region (defined by vertices) is colored as white, and elsewhere as black. Then a logic "and"  (using `cv2.bitwise_and`) is used to combine this colored image with the one from Canny edge detection (black and white). 
 - After the previous step, only edges nearby the lane lines are kept. Then I implemented the Hough transformation to look for lines in these edges. To get a reasonable lane line detection, I also excluded lines that are shorter than 40 (pixels). If the gap between two points is larger than 20 (pixels), I also don't consider them as in the same line. 
-  -  
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
