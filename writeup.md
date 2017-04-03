@@ -2,7 +2,7 @@
 
 ### Goals
 
-1. Create a image processing pipeline that finds lane lines on the road. 
+1. Create an image processing pipeline that finds lane lines on the road. 
 2. Apply the lane finding pipeline to identify lane lines in video. 
 3. Be familiar with simple image processing and edge detection techniques and their shortcomings in practice. 
 
