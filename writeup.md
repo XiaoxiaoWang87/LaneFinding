@@ -35,8 +35,8 @@ My pipeline consisted of seven steps. I implemented these steps in a class calle
 
 Below are the image before and after the above processings. 
 
-![Lanes](https://github.com/XiaoxiaoWang87/LaneFinding/blob/master/test_images/solidYellowLeft.jpg){ width=50% }
-![Lanes](https://github.com/XiaoxiaoWang87/LaneFinding/blob/master/test_images_output/solidYellowLeft.jpg){ width=50% }
+![Lanes](https://github.com/XiaoxiaoWang87/LaneFinding/blob/master/test_images/solidYellowLeft.jpg =299x168)
+![Lanes](https://github.com/XiaoxiaoWang87/LaneFinding/blob/master/test_images_output/solidYellowLeft.jpg =299x168)
 
 #### 2. Potential Shortcomings
 
