@@ -2,7 +2,7 @@
 
 ## Overview
 
-Repository of Project 1 - Finding lanes on the road.
+Repository of project 1 - Finding lanes on the road.
 
 ## List of Files:
 
