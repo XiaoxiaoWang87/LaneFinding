@@ -54,4 +54,4 @@ Processed image:
 
 #### 3. Possible Improvements
 
-Start with a fairly loose constraint on the angle of lane lines. For each frame, after fitting the lines record its slope parameter. Monitor the mean and variance of the slope parameter frame-by-frame and use the mean +/- a few standard deviation as the range to find future lane lines. If for a certain frame, due to road condition the algorithm fails to find a line within the range, use the previous mean by default as the estimated lane line.
+Start with a fairly loose constraint on the angle of lane lines. For each frame, after the linear fit record its slope parameter. Monitor the mean and variance of the slope parameter frame-by-frame and use the previous mean +/- a few standard deviation as the range to find future lane lines. If for a certain frame, due to road condition the algorithm fails to find a line within the range, use the previous mean by default as the estimated lane line.
