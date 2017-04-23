@@ -50,15 +50,8 @@ Processed image:
 
 1. Currently the algorithm determines if a line belong to the left or right lane by calculating the line angle and constraining it to a pre-defined range. This range may vary for different camera positions or different road geometry.
 
-2. The current Canny edge detection threshold may not work well when the contrast between lanes and the ground is small. 
-
-
-
-Another shortcoming could be ...
-
+2. The current Canny edge detection threshold may not work well when the contrast between lanes and the ground is small.
 
 #### 3. Possible Improvements
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+Start with a fairly loose constraint on the angle of lane lines. For each frame, after fitting the lines record its slope parameter. Monitor the mean and variance of the slope parameter frame-by-frame and use the mean +/- a few standard deviation as the range to find future lane lines. If for a certain frame, due to road condition the algorithm fails to find a line within the range, use the previous mean by default as the estimated lane line.
