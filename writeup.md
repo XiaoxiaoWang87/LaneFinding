@@ -50,6 +50,8 @@ Processed image:
 
 1. Currently the algorithm determines if a line belong to the left or right lane by calculating the line angle and constraining it to a pre-defined range. This range may vary for different camera positions or different road geometry.
 
+2. The current Canny edge detection threshold may not work well when the contrast between lanes and the ground is small. 
+
 
 
 Another shortcoming could be ...
