@@ -1,5 +1,11 @@
 # LaneFinding
 
+## Overview
+
+Repository of Project 1 - Finding lanes on the road.
+
+## List of Files:
+
 Project code: [LaneFinding/P1.ipynb](https://github.com/XiaoxiaoWang87/LaneFinding/blob/master/P1.ipynb)
 
 Project writeup: [LaneFinding/writeup.md](https://github.com/XiaoxiaoWang87/LaneFinding/blob/master/writeup.md)
