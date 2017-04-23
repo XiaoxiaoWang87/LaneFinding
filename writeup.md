@@ -38,15 +38,17 @@ My pipeline consisted of seven steps. I implemented these steps in a class calle
 Below are the image before and after the above processing steps.
 
 Original image:
+
 <img src="https://github.com/XiaoxiaoWang87/LaneFinding/blob/master/test_images/solidYellowCurve.jpg" width="400">
 
 Processed image:
+
 <img src="https://github.com/XiaoxiaoWang87/LaneFinding/blob/master/test_images_output/solidYellowCurve.jpg" width="400">
 
 
 #### 2. Potential Shortcomings
 
-Currently the algorithm decides if a line belong to the left or right lane by calculating the line angle and constraining it to a pre-defined range. This range may vary for different camera positions or different road geometry. 
+1. Currently the algorithm determines if a line belong to the left or right lane by calculating the line angle and constraining it to a pre-defined range. This range may vary for different camera positions or different road geometry.
 
 
 
